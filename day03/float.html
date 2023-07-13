@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 20px;
+            margin: 10px;
+        }
+        .box1{
+            background-color: yellow;
+            float: left; /*왼쪽으로 플로팅*/
+            /* display: inline-block은 가로배치시 기본 마진, 패딩을 갖고있지만
+                float: left로 배치하면 가로로 배치될 때 요소에 기본 마진, 패딩이 없다
+                필요시 반드시 지정해야한다. clear 속성으로 플로팅 해제를 해야한다. */
+        }
+        .box2{
+            background-color: pink;
+            float: rigtht;
+        }
+        .box3{
+            background-color: purple;
+        }
+        .box4{
+            background-color: aquamarine;
+        }
+        /* float를 사용하면 clear 해준다
+        clear: left; 플로팅 왼쪽 해제 */
+        
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+</body>
+</html>

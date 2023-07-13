@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaverRegisterForm</title>
+</head>
+<body>
+    <img src="../images/daum.png" alt="네이버 로고"width = 300px><br>
+    <fieldset>
+        <div id="container">
+
+            <form> <!--폼 안에서 리셋 적용-->
+
+                <label for="uid">아이디</label>
+                <input type="text" id="uid"><br>
+
+                <label for="pwd1">비밀번호</label>
+                <input type="password" id="pwd1"><br>
+                <label for="pwd2">비밀번호 재확인</label>
+                <input type="password" id="pwd2"><br>
+                <label for="uname">이름</label>
+                <input type="text" id="uname"><br>
+                <label for="year">생년월일</label><br>
+                <input type="text" id = "year" placeholder="년(4자)">
+                <select id="month">
+                    <optgroup>
+                        <option value="basic" selected>월</option>
+                        <option value="mechanic">1월</option>
+                        <option value="indust">2월</option>
+                        <option value="elec">3월</option>
+                        <option value="computer">4월</option>
+                        <option value="chemical">5월</option>
+                        <option value="chemical">6월</option>
+                        <option value="chemical">7월</option>
+                        <option value="chemical">8월</option>
+                        <option value="chemical">9월</option>
+                        <option value="chemical">10월</option>
+                        <option value="chemical">11월</option>
+                        <option value="chemical">12월</option>
+                    </optgroup>
+                </select><br>
+                <input type="text" id = "day" placeholder="일"><br>
+                <input type="radio" name="male" id="male">
+                <label for="male">남자</label>
+                <input type="radio" name="female" id="female">
+                <label for="female">여자</label>
+                <input type="radio" name="none" id="none">
+                <label for="none">선택 안함</label><br>
+                <label for="email">본인 확인 이메일(선택)</label>
+                <input type="email" id = "email" placeholder="선택 입력"><br>
+                <label for="phoneNum">휴대전화</label>
+                <select id="nationalNum">
+                    <optgroup>
+                        <option value="korea" selected>대한민국 +82</option>
+                        <option value="us">미국 +1</option>
+                        <option value="france">프랑스 +33</option>
+                        <option value="spain">스페인 +34</option>
+                    </optgroup>
+                </select><br>
+                
+                
+                <input type="text" id = "num1" placeholder="전화번호 입력">
+                <button type="button">인증번호 받기</button> <br>
+                
+                
+                <input type="text" id = "secNunm" placeholder="인증번호를 입력하세요">
+                <div id="buttons">
+                    <input type ="submit" value="가입하기">
+                </div>
+
+                <a href="">이용약관</a>
+                <a href="">개인정보처리방침</a>
+                <a href="">책임의 한계와 법적고지</a>
+                <a href="">회원정보 고객센터</a>
+                <a href="">Naver.Corp</a>          
+                <!-- https://www.naver.com -->
+            
+            </form>
+            
+
+
+
+        </div>
+    </fieldset>
+    
+</body>
+</html>

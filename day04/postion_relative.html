@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_relative</title>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        /*
+        absolute: 절대값
+        relative: 상대값
+        fixed: 설정 위치에 고정
+
+        */
+        .static{
+            width: 300px;
+            height: 200px;
+            background-color: blueviolet;
+            position: static;   /* 요소를 문서의 흐름에 맞춰 배치(기본값) */
+        }
+        .relative1{
+            background-color: blue;
+            /* 기본 div는 한 줄을 차지 */
+            width: 300px;
+            height: 200px;
+            position: relative;
+        }
+        .relative2{
+            background-color: green;
+            /* 기본 div는 한 줄을 차지 */
+            width: 300px;
+            height: 200px;
+            position: relative;
+            left: 100px;
+            top: -50px;
+        }
+        .fixed{
+            width: 150px;
+            height: 150px;
+            background-color: plum;
+            position: fixed;
+            right: 50px;
+            top: 50px;
+            
+        }
+        .sticky{
+            background-color: cyan;
+            width: 80px;
+            height: 80px;
+            position: sticky;
+            top:5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="static">박스1</div>
+    <div class="relative1">박스2</div>
+    <div class="relative2">박스3</div>
+    <div class="fixed">박스4 공지사항 스크롤 생겼을 때 확인</div>
+    <div class="sticky">박스5</div>
+    <p>
+        [파이낸셜뉴스] 인천의 한 아파트 주차장에서 극단적 선택을 시도하다가 자신의 1t 화물트럭에 불을 내고 주변 차량까지 불이 번지게 한 혐의를 받는 40대 택배기사가 재판에 넘겨졌다.
+
+13일 인천지검 형사2부(부장검사 위수현)는 지난 11일 방화연소 혐의로 A(40대)씨를 구속 기소했다.
+
+검찰 수사 결과 A씨의 범행으로 불에 탄 차량은 총 12대이고 피해금액은 6000여만원인 것으로 파악됐다.
+
+앞서 A씨는 지난달 25일 오전 5시10분 인천 부평구의 한 아파트 지상주차장에서 자기 소유인 1t 택배차량 안에 불을 지르고 주변 차량까지 태운 혐의로 경찰에 붙잡혔다.
+
+그는 신변을 비관해 극단적 선택을 시도했는데 그 불이 주변까지 번지며 커진 것으로 드러났다. 인명피해는 발생하지 않았다.
+
+사건 당일 소방당국은 소방관 등 인력 54명, 펌프차 등 장비 18대를 투입해 화재 발생 14분 만에 불을 완전히 껐다.
+
+당시 경찰은 A씨의 범행으로 발생한 피해가 큰 점 등을 고려해 구속 수사가 필요하다고 판단했다.
+    </p>
+</body>
+</html>

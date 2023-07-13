@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지</title>
+    <style>
+        div{
+            background-image: url(https://cdn.pixabay.com/photo/2017/01/12/06/26/flowers-1973875_1280.png);
+            width: 800px;
+            height: 80vh;
+        }
+        .a1{
+            position: absolute;
+            text-align: right;
+            bottom: 200px;
+            right: 0;
+            margin: 0;
+            font-size: 300px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.5);
+            text-shadow: 20px 30px 40px black;
+        }
+        h1{
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .shadow1{
+            color: olive;   /* 글자색 */
+            text-shadow: 20px 20px 20px gray;
+            /* 가로, 세로, 번짐 정도, 색상 */
+        }
+        .shadow2{
+            text-shadow: 3px 3px;
+            color: cadetblue;
+        }
+        .shadow3{
+            color: aliceblue;
+            text-shadow: 7px -7px 5px gray;
+        }
+        .shadow4{
+            color: aqua;
+            text-shadow: 0px 0px 4px lightgray, 2px -10px 4px yellow, 3px -18px 7px red, 5px 5px 20px violet;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p class="a1">CSS</p>
+    </div>
+    <h1 class="shadow1">HTML5</h1>
+    <h1 class="shadow2">HTML5</h1>
+    <h1 class="shadow3">HTML5</h1>
+    <h1 class="shadow4">HTML5</h1>
+</body>
+</html>
