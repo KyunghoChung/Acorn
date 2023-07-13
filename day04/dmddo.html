@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        section{
+        .topPart{
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
             
         .box{
@@ -19,6 +20,34 @@
             align-items: center;
         }
         
+        .downPart{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            /* height: 100vw; */
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .imgBox{
+            /* position: relative; */
+            width: 200px;
+            height: 200px;
+            border: 1px, solid black;
+        }
+
+        /* .image{
+            position: relative;
+            top: 160px;
+            left: 40px;
+        } */
+
+        .textBox{
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+            padding: 50px;
+            background-color: lightblue;
+        }
 
     </style>
 </head>
@@ -26,7 +55,7 @@
     
     <hr>
     <h1>new arrivals</h1>
-    <section>
+    <section class="topPart">
         <article class="box">
             <div class="content1">kol cup</div>
             <div class="content2">95$</div>
@@ -43,6 +72,19 @@
             <div class="content1">kol cup</div>
             <div class="content2">95$</div>
         </article>
+    </section>
+    <section class="downPart">
+        <div class="imgBox">
+            <img src="https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_640.jpg" alt="우주 이미지" width="300px" class="image">
+        </div>
+
+        <div class="textBox">
+            <p>What started as a hobby <br>
+                and a way to pass time, <br>
+                evolved into a real passion. <br>
+                <a href="#" class="link">Our Story</a>
+            </p>
+        </div>
     </section>
     
     
