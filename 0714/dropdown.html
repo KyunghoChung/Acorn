@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드롭다운</title>
+    <style>
+        body{
+            background: #000;
+            min-height:100vh;
+
+        }
+        header{
+            display:flex;
+            justify-content:center;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        button{
+            border:none;
+            border-radius:5px;
+            padding:15px 30px;
+            font-size:18px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background-color:#ddd;
+        }
+
+        .dropdown-options {
+            display: none;
+            position: absolute;
+            overflow: auto;
+            background-color:#fff;
+            border-radius:5px;
+            box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+        }
+
+        .dropdown:hover .dropdown-options {
+            display: block;
+        }
+
+        .dropdown-options a {
+            display: block;
+            color: #000000;
+            padding: 5px;
+            text-decoration: none;
+            padding:20px 40px;
+        }
+
+        .dropdown-options a:hover {
+            color: #0a0a23;
+            background-color: #ddd;
+            border-radius:5px;
+        }
+        h2, h3, p{
+            color: white;
+        }
+        img{
+            width: 250px;
+            height: 200px;
+        }
+        .box{
+            display: flex;
+            justify-content: space-around;
+        }
+        p{
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="dropdown">
+            <button>DropDown01</button>
+            <div class="dropdown-options">
+                <a href="#">option01</a>
+                <a href="#">option02</a>
+                <a href="#">option03</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button>DropDown02</button>
+            <div class="dropdown-options">
+                <a href="#">option01</a>
+                <a href="#">option02</a>
+                <a href="#">option03</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button>DropDown03</button>
+            <div class="dropdown-options">
+                <a href="#">option01</a>
+                <a href="#">option02</a>
+                <a href="#">option03</a>
+            </div>
+        </div>
+    </header> 
+    <h2>인기 상품순</h2>
+    <main>
+        <section class="box">
+            <div class="content1">
+                <a href="#"><img src="../images/milkyway.jpg" alt=""></a>
+                <div class="textbox1">
+                    <h3>상품 1</h3>
+                    <p>설명 텍스트<br>가격: 0000원</p>
+                </div>
+            </div>
+            <div class="content2">
+                <a href="#"><img src="../images/rainbow.jpg" alt=""></a>
+            </div>
+            <div class="content3">
+                <a href="#"><img src="../images/lakethesun.jpg" alt=""></a>
+            </div>
+        </section>
+    
+    </main>
+    
+     </body>
+</html>
+
