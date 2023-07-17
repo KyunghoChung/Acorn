@@ -4,11 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mainPage</title>
+    <script
+
+    src="https://kit.fontawesome.com/4ec79785b5.js"
+
+    crossorigin="anonymous"
+
+  ></script>
+    <style>
+        .navBar{
+            background-color: lightgrey;
+            padding: 10px;
+        }
+        .navBar-nav{
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+        }
+        /* .navBar-item{
+            display: inline-block;
+            margin-right: 10px;
+        } */
+        .navBar-item a{
+            text-decoration: none;
+            color: #333;
+            /* padding: 5px; */
+        }
+        .navBar-item a:hover{
+            background-color: #ddd;
+        }
+        .logo a{
+            align-items: center;
+        }
+
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-
+        <nav class="navBar">
+            <div class="logo">
+                
+            </div>
+            <ul class="navBar-nav">
+                <li class="navBar-item"><a href="../myPage/mainPage.html"><i class="fa-solid fa-bars"></i></a></li>
+                <li class="navBar-item"><a href="../myPage/mainPage.html">Home</a></li>
+                <li class="navBar-item"><a href="intro.html">Intro</a></li>
+                <li class="navBar-item"><a href="study.html">Study</a></li>
+                <li class="navBar-item"><a href="etc.html">etc</a></li>
+            </ul>
         </nav>
     </header>
     <main>
