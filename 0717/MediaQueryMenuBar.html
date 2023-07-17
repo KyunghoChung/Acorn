@@ -14,7 +14,7 @@
       display: flex;
       justify-content: space-around;
       height: 70px;
-      background-color: bisque;
+      background-color: lightgrey;
       padding-top: 15px;
     }
 
@@ -34,7 +34,11 @@
 
     a{
       text-decoration: none;
-      color: black;
+      color: #333;
+      
+    }
+    a:hover{
+        background-color: #ddd;
     }
     /* 창 크기 가로가 768 이하일 때 */
     @media screen and (max-width: 768px) {
@@ -48,9 +52,9 @@
       .navbar ul li {
         line-height: 2;
       }
-      .appo {
+      /* .appo {
         display: none;
-      }
+      } */
     }
   </style>
 </head>
@@ -58,7 +62,7 @@
   <nav>
     <div class="logo">
       <a href="index.html" class="logologo"><h1>LoGO</h1></a> 
-      <!— 홈페이지 메인 페이지는 index.html 로 만들어줘야함. 로고 눌렀을 때 메인으로 놀아오겠끔 —>
+      <!-- 홈페이지 메인 페이지는 index.html 로 만들어줘야함. 로고 눌렀을 때 메인으로 놀아오겠끔 -->
     </div>
 
     <div class="navbar">
@@ -70,13 +74,15 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
-    <div class="icons">
+    <!-- <div class="icons">
       <ul>
         <li><a href="#">아이콘</a></li>
         <li><a href="#" class="appo">아이콘</a></li>
         <li class="appo">Appontemnt</li>
       </ul>
-    </div>
+    </div> -->
   </nav>
+
+  <div class="main"></div>
 </body>
 </html>
