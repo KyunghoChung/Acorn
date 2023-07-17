@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>폼 스타일 연습01</title>
     <style>
-        h1{
+        /* h1{
             font-weight: bold;
         }
          fieldset{
@@ -16,9 +16,7 @@
             display: flex;
             align-items: center;
          }
-         ul{
-            list-style: none;
-         }
+
          label{
             color: green;
             font-weight: bold;
@@ -30,6 +28,28 @@
             display: flex;
             align-items: center;
          } */
+         .reg{
+            font-size: 14px;
+            color: green;
+            font-weight: bold;
+            width: 110px;
+            float: left;
+            text-align: right;
+            margin-left: 10px;
+         }
+         input[required]{
+            border: 1px red solid;
+         }
+         input[readonly]{
+            border: none;
+         }
+         #uname{    /* id로 된 곳은 #으로 선택 */
+            color: blue;
+            width: 80px;
+         }
+         ul{
+            list-style: none;
+         }
     </style>
 </head>
 <body>
