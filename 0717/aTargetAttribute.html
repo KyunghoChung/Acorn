@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +9,16 @@
             background-color: blue;
             color: white;
         }
-        [target=_blank]{
+        [target=_blank]{    /* 속성 중 target이 _blank인 요소 선택 */
             background-color: red;
+            color: white;
+        }
+        [title~= "웹(web)"]{    /* title 속성"값"이 포함된(~) 요소 */
+            background-color: black;
+            color: white;
+        }
+        [lang|=en]{
+            background-color: green;
             color: white;
         }
     </style>
