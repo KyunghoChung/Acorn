@@ -21,6 +21,22 @@
             background-color: green;
             color: white;
         }
+        a[href^="https"]{
+            /* href 값이 https로 시작하는 (^)요소 선택 */
+            background-color: violet;
+            color: white;
+        }
+        a[href$="com"]{
+            /* href 값이 속성값($) com으로 끝나는 요소 */
+            background-color: green;
+            color: aliceblue;
+            text-decoration: overline;
+        }
+        a[href*="da"]{
+            /* href 값이 da포함(*)된 요소 선택(속성값 일부) */
+            background-color: aqua;
+            color: black;
+        }
     </style>
 </head>
 <body>
