@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 요소(Virtual Element) 연습01</title>
+    <style>
+        .list01::before, .list06::before{
+            content: "주문폭주!!!";
+            background-color: pink;
+        }
+        .list04::after{
+            content: "NEW!!!";
+            background-color: red;
+            color: white;
+        }
+        /* {
+            content: "주문폭주!!!";
+            background-color: pink;
+        } */
+        .list07::after, .list08::after{
+            content: "품절!!!";
+            background-color: green;
+            color: white;
+        }
+        /* {
+            content: "품절!!!";
+            background-color: green;
+            color: white;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <h1>제품 목록</h1>
+        <ul>
+            <li class="list01">제품 A</li>
+            <li>제품 B</li>
+            <li>제품 C</li>
+            <li class="list04">제품 D</li>
+            <li>제품 E</li>
+            <li class="list06">제품 F</li>
+            <li class="list07">제품 G</li>
+            <li class="list08">제품 H</li>
+        </ul>
+    </div>
+</body>
+</html>
