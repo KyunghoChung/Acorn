@@ -1,0 +1,27 @@
+body{
+    background-color: #4e5a56;
+    background-size: cover;
+    /* background-attachment: fixed;  */
+    background-position: center; 
+}
+
+.one {
+    background-size: cover;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.profile {
+    border-radius: 30%;
+    display: inline-block;
+    padding: 0.5rem;
+    margin-top: 20px;
+    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.profile img {
+    border-radius: 30%;
+}
