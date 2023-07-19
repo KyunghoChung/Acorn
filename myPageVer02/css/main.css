@@ -40,7 +40,8 @@ h5{
     text-decoration: none;
 }
 .menu li a:hover{
-    font-size: 140%
+    font-size: 120%;
+    transition: transform .3s;
 }
 
 .menu ul {
