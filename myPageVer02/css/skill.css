@@ -1,5 +1,5 @@
-body {
-    background-color: #e0d8cc;
+body{
+    background-color: #cfcfe8;
     background-size: cover;
     background-attachment: fixed; 
     background-position: center; 
@@ -9,15 +9,15 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
-h3 {
-    color: black;
+h3{
+    margin-top: 150px;
     text-align: center;
 }
 
-.lists{
+.toolList{
     text-align: center;
     font-family: 'Pretendard-Thin';
     display: block;
@@ -29,14 +29,14 @@ h3 {
     font-style: italic;
 }
 
-.list_img {
+.tool_img {
     border-radius: 15%;
     width: 300px;
     height: 200px;
     display: block;
     margin: 7vh 5vh;
     margin-bottom: 50px;
-    /* ------------------- */
+    /* ---------------------- */
     display: inline-block;
     padding: 0.5rem;
     margin-top: 20px;
@@ -45,10 +45,7 @@ h3 {
     border: 1px solid rgb(255, 255, 255, 0.5);
 }
 
-
-
-.favorites {
+.tool {
     display:inline-flex;
     margin-top: 60px;
 }
-
