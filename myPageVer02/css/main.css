@@ -1,6 +1,10 @@
 body {
     overflow: auto;
     font-family: 'Roboto Slab', serif;
+    background-color: #3b456a;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center; 
 }
 
 h3 {
@@ -35,6 +39,9 @@ h5{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
+.menu li a:hover{
+    font-size: 140%
+}
 
 .menu ul {
     padding-left: 0px;
@@ -45,7 +52,7 @@ h5{
     font-style: italic;
     align-items: center;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 40px;
     position: fixed;
     top: 0;
     left: 0;

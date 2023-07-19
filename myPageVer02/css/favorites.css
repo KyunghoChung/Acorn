@@ -1,9 +1,4 @@
-body {
-    background-color: #4e5a56;
-    background-size: cover;
-    background-attachment: fixed; 
-    background-position: center; 
-}
+
 
 .list {
     display: flex;
@@ -43,7 +38,7 @@ h3 {
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgb(255, 255, 255, 0.5);
     /* -------------------------------------------- */
-    object-fit:cover;
+    /* object-fit:cover; */
     transform:scale(1.0);
     transition: transform .5s;
 }

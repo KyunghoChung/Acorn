@@ -1,9 +1,4 @@
-body {
-    background-color: #9f4f9f;
-    background-size: cover;
-    background-attachment: fixed; 
-    background-position: center; 
-}
+
 
 .list {
     display: flex;
@@ -38,6 +33,7 @@ body {
     font-style: italic;
     margin: 35px;
 }
+
 
 .forMargin{
     margin-top: 80px;
