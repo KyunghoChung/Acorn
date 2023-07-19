@@ -13,6 +13,14 @@ h3 {
     font-size: 20px;
 }
 
+h5{
+    font-family: 'Pretendard-Thin';
+    color: #ffffff;
+    text-align: center;
+    font-style: italic;
+    /* font-size: 20px; */
+}
+
 /* 상단바 */
 
 .menu * {
