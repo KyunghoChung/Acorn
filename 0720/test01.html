@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            background-color: red;
+            color: aliceblue;
+        }
+        h3{
+            background-color: violet;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var Kor = prompt("국어점수를 입력하세요.", "");
+        var Math = prompt("수학점수를 입력하세요.", "");
+        var Eng = prompt("영어점수를 입력하세요.", "");
+        var total = Number(Kor) + Number(Math) + Number(Eng);
+        var Avg = total/3;
+        let message;
+        document.write("<h1>평균점수는?"+Avg+"입니다.</h1>")
+        
+        // if 조건문
+        if(Avg >= 90){
+            message = ' A 입니다 !!';
+        }
+        else if(Avg >= 80){
+            message = ' B 입니다 !!';
+        }
+        else if(Avg >= 70){
+            message = ' C 입니다 !!';
+        }
+        else if(Avg >= 60){
+            message = ' D 입니다 !!';
+        }
+        else{
+            message = ' F 입니다. 재수강 하세요.'
+        }
+        console.log(Avg);
+        console.log(message);
+        document.write("<h3>" + message + "</h3>");
+    </script>
+</body>
+</html>

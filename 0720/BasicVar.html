@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // 변수 문자형 String
+        var a = "javaScript";
+        var num = "100";
+        var tag = "<h1> String </h1>"; // 태그로 인식
+        console.log(a);
+        console.log(num);
+        console.log(tag);
+
+        // doucument.write();는 권장 X
+        // document.write(a);
+        // document.write(num);
+        // document.write(tag);
+
+        // 변수 숫자형 nummber
+        var s = 100;
+        var t = Number("500");  // 형변환
+        var n = s + t;
+        console.log(s);
+        console.log(t);
+        console.log(n);
+
+        // 변수 논리형 boolean
+        var y = true;
+        var t = 10 > 100; // 거짓 false
+        var k = Boolean("hello");   // 빈 문자 외에 모두 True
+        console.log(y);
+        console.log(t);
+        console.log(k);
+        var m = Boolean(0);     // 0만 False
+        var x = Boolean(11);     // 다른 숫자는 True
+        console.log(m);
+        console.log(x);
+        
+        // null 과 undefined data
+        // undefined 자료가 정의(할당)되지 않았을 때
+        // null 데이터 값이 유효하지 않은 상태 (값이 비어있다.)
+        // 숫자 0은 null이 아님
+
+        var sol;    // 변수명만 선언된 상태
+        console.log(sol);
+        var tol = 'hello';
+        console.log(tol);
+
+        // typeof 어떤 자료형인지 알고 싶을 때
+        var num0 = 100;
+        var str0 = '자바스크립트'
+        console.log(typeof num0);
+        console.log(typeof str0);
+
+        // 연산자
+        var num1 = 15;
+        var num2 = 2;
+        var num3 = num1 + num2;
+        console.log(num3);
+        num3 = num1 - num2;
+        console.log(num3);
+
+        // 문자 결합 연산자
+        var t1 = "동해물과";
+        var t2 = "백두산이";
+        var t3 = 1234;
+        var t4 = "마르고 닳도록";
+        var result = t1 + t2+ t3 + t4;
+        console.log(result);
+
+        // 대입 연산자: 연산된 데이터를 변수에 저장
+        // 복합 연산자: 산술 + 대입
+        var num3 = 10;
+        var num4 = 3;
+        num3 += num4;   // num1 = num1 + num2
+        console.log(num3);
+        num3 -= num4
+        console.log(num3);
+        num3 *= num4
+        console.log(num3);
+        num3 %= num4
+        console.log(num3);  // %: 나머지 연산자
+
+        // 퀴즈/복합연산자 표 만들기
+        var str1 = "<table border='1'>";
+            str1 += "<tr>";
+            str1 += "<td>1</td>";
+            str1 += "<td>2</td>";
+            str1 += "<td>3</td>";
+            str1 += "</tr>";
+            str1 += "</table>";
+            document.write(str1);
+
+        // prompt('입력 제목', '입력 내용');
+        // confirm('확인 내용');
+        // alert('출력 내용');
+
+
+        // 증감 연산자
+        let num6 = 10;
+        let num7 = 20;
+        let result123;
+
+        num6--;
+        document.write(num6);
+
+        num6++;
+        document.write(num6);
+
+        result123 = num7++;
+        document.write(num7);
+
+        result123 = --num7;
+        document.write(num7);
+
+        
+        // 비교 연산자
+        var ko = 10, mo = "10";
+        ko == 10;
+        mo == 10;
+            
+        ko === 10;
+        mo === 10;
+
+        var a1 = 10;
+        var a2 = 20;
+        var a3 = 10;
+        var d1 = "20";
+        var result8;
+
+        result8 = a1 > a2;
+        console.log(result8);
+        result8 = a1 < a2;
+        console.log(result8);
+        result8 = a1 <= a2;
+        console.log(result8);
+        result8 = a1 == a2;
+        console.log(result8);
+        result8 = a1 != a2;
+        console.log(result8);
+        result8 = a1 === a2;
+        console.log(result8);
+
+        // 논리연산자
+        var b1 = 10;
+        var b2 = 20;
+        var b3 = 30;
+        var b4 = 40;
+        var result9;
+
+        result9 = b1 < b2 || b2 > b3 || b3 > b4;    // ||: or
+        console.log(result9)
+
+
+    </script>
+    <!-- body 부분 끝나기 전에 script를 쓴다 -->
+    <!-- body 부분이 먼저 실행된 후에 자바스크립트를 실행한다. -->
+</body>
+</html>
