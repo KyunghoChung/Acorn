@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> toggle 토글 버튼 </title>
+    <style>
+        img{
+            width: 200px;
+            height: 150px;
+        }
+
+        #bulbOff{
+            display: block;
+        }
+        #bulbOn{
+            display: none;
+        }
+        #bulbOff.active{
+            display: none;
+        }
+        #bulbOn.active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img src="../images/bulbOff.svg" id="bulbOff">
+    <img src="../images/bulbOn.svg" id="bulbOn">
+    <button class="OnBtn">전원 켜기</button>
+    <button class="OffBtn">전원 끄기</button>
+
+    <script>
+        const $OffBtn = document.querySelector(".OffBtn");
+        const $OnBtn = document.querySelector(".OnBtn");
+        const $bulbOff = document.querySelector("#bulbOff");
+        const $bulbOn = document.querySelector("#bulbOn");
+
+        // add & remove를 한 번에 사용: toggle
+        $bulbOff.addEventListener("click", () =>{
+            $pic1.classList.toggle("active");
+            $pic2.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
