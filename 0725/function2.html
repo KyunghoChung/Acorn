@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 function2</title>
+</head>
+<body>
+    
+
+    <script>
+        // function sumMulti(x, y){    // 매개변수
+        //     if (x == y){
+        //         return x * y;
+        //     }
+        //     else{
+        //         return x + y;
+        //     }
+        // }
+
+        // console.log(sumMulti(7, 7));    // 인자
+        // console.log(sumMulti(72, 70));    // 인자
+        // 함수 여러 번 실행 가능
+
+        // parseInt: 정수로 변환
+        // parseFloat: 실수(소수점) 변환
+        let num1 = parseInt(prompt("비교할 첫 번째 숫자: "));
+        let num2 = parseInt(prompt("비교할 두 번째 숫자: "));
+        
+        compareTwo(num1, num2);    // 함수 실행
+
+        function compareTwo(x, y){  // 함수 선언
+            if (x == y){
+                // alert(x + "와/과" + y + "은/는 같습니다.");
+                alert(`${x}와/과 ${y}은/는 같습니다.`)
+            }
+            else if(x > y){
+                alert(x + "이/가 " + y + "보다 큽니다.");
+            }
+            else{
+                alert(x + "이/가 " + y + "보다 작습니다.");
+            }
+        }
+    </script>
+</body>
+</html>
