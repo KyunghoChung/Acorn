@@ -28,6 +28,8 @@
         console.log(date);
         console.log(date.getFullYear());
         console.log(date.getMonth());
+        let month = date.getMonth() + 1;    // 월이 0~11로 나오기 때문에 +1을 해줘야한다.
+        // 아래의 date.toLocaleString() 에서는 월이 제대로 찍혀 나온다.
         console.log(date.getDate());
         console.log(date.getDay());
 
