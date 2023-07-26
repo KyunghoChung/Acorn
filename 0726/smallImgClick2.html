@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #big{
+            width: 400px;
+        }
+        .small{
+            width: 150px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>당후니 이모티콘</h1>
+        <div id="prod-pic">
+            <img src="../images/내가말하고있잖아.png" id="big">
+            <div id="small-pic">
+                <img src="../images/내가말하고있잖아.png" class="small">
+                <img src="../images/늦은시간에매너.png" class="small">
+                <img src="../images/쁘히힛.png" class="small">
+                <img src="../images/사랑해.png" class="small">
+                <img src="../images/아차차.png" class="small">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let big = document.querySelector("#big");
+        let small = document.querySelectorAll(".small");
+
+        for(let i = 0; i <small.length; i++){
+            small[i].addEventListener("click", changePic);
+        }
+
+        function changePic(){
+            let newPic = this.src;
+            big.setAttribute("src", newPic);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Node 추가</title>
+    <style>
+        p{
+            display: none;
+            background-color: palevioletred;
+            color: bisque;
+        }
+        #more{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1> 노드 리스트 </h1>
+    <pre>
+        텍스트 노드 추가하기. 
+        DOM에 새로운 요소를 추가할 때는 
+        가장 먼저 요소 노드를 만들어야합니다. 
+
+        1. 요소 노드 생성: createElement() 메서드
+        2. 텍스트 노드 생성: createTextNode() 메서드
+        3. 자식 노드 연결: appendChild() 메서드
+    </pre>
+    <a id="more" href="#">더 보기</a>
+    <script>
+        // 요소 노드 생성
+        let newP = document.createElement("p");
+        // 테스트 노드 생성
+        let textNode = document.createTextNode("추가될 내용");
+        // 자식 노드 연결
+        newP.appendChild(textNode);
+
+        document.getElementById("more").addEventListener("click", () => {
+            newP.style.display = (newP.style.display === "none") ? "block" : "none";
+        });
+        // p요소 노드를 body 노드의 자식 노드로 추가
+        document.body.appendChild(newP);
+    </script>
+</body>
+</html>
