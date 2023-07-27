@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+    
+        #container {
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+        h1 {
+            text-align: center;
+            color: #ff4081;
+        }
+    
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    
+        legend {
+            color: #ff4081;
+            font-weight: bold;
+            padding: 0 8px;
+        }
+    
+        input[type="checkbox"] {
+            margin-right: 5px;
+            transform: translateY(3px);
+            display: none;
+        }
+    
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            padding-left: 26px;
+            position: relative;
+        }
+    
+        label:before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            position: absolute;
+            left: 0;
+            top: 1px;
+        }
+    
+        label:hover:before {
+            border-color: #ff4081;
+        }
+    
+        input[type="checkbox"]:checked + label:before {
+            background-color: #ff4081;
+            border-color: #ff4081;
+        }
+    
+        input[type="checkbox"]:checked + label:after {
+            content: '\2713';
+            position: absolute;
+            top: 1px;
+            left: 5px;
+            color: #fff;
+        }
+    
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #ff4081;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>총 주문 가격 확인</h1>
+        <fieldset>
+            <legend>기본 가격</legend>
+            <p>30,000 원</p>
+        </fieldset>
+        <form>
+            <fieldset>
+                <legend>추가 주문</legend>
+                <input type="checkbox" id="ck1" class="check" value="1200">
+                <label for="ck1">기장추가 (1200원)</label>
+
+                <input type="checkbox" id="ck2" class="check" value="3000">
+                <label for="ck2">배송 비용 (3000원)</label>
+
+                <input type="checkbox" id="ck3" class="check" value="800">
+                <label for="ck3">산간지역 추가 비용 (800원)</label>
+
+                <input type="checkbox" id="ck4" class="check" value="4800">
+                <label for="ck4">양말 (2개, 4800원)</label>
+
+                <input type="checkbox" id="ck5" class="check" value="2400">
+                <label for="ck5">선물 포장 (2400원)</label>
+            </fieldset>
+        </form>
+        <fieldset>
+            <legend>합계</legend>
+            <input type="text" name="total" id="total">
+        </fieldset>
+    </div>
+
+    <script>
+        let checkboxes = document.querySelectorAll(".check");
+    let totalInput = document.getElementById("total");
+
+    let total = 30000;
+    totalInput.value = total.toLocaleString() + " 원";
+
+    for (let i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].addEventListener("change", updateTotal);
+    }
+
+    function updateTotal() {
+        total = 30000;
+
+        for (let i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+                total += parseInt(checkboxes[i].value);
+            }
+        }
+
+        totalInput.value = total.toLocaleString() + " 원";
+    }
+    </script>
+</body>
+</html>
