@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        
+        td:last-child {
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+
+        let nums = [2, 4, 6, 8, 10];
+        showArray(nums);
+
+        let sum = 0;
+        for(let i = 0; i < nums.length; i++){
+            sum += nums[i];
+        }
+
+        nums.push(sum);
+        showArray(nums);
+
+        function showArray(array){
+            let str = "<table><tr>";
+            for(let j = 0; j<array.length; j++){
+                str += "<td>" + array[j] + "</td>";
+            }
+            str += "</tr></table>";
+            document.write(str);
+        }
+    </script>
+    
+</body>
+</html>
