@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 8px 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>방명록</h1>
+        <form id="guestForm">
+            <label for="name">이름:</label>
+            <input type="text" id="name" required>
+            <label for="message">방문한 곳:</label>
+            <textarea id="message" rows="4" required></textarea>
+            <button type="submit">기록하기</button>
+        </form>
+        <ul id="guestList"></ul>
+    </div>
+
+    <script>
+        const guestForm = document.getElementById('guestForm');
+        const guestList = document.getElementById('guestList');
+
+        guestForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const nameInput = document.getElementById('name');
+            const messageInput = document.getElementById('message');
+
+            const name = nameInput.value;
+            const message = messageInput.value;
+
+            if (name && message) {
+                const entry = document.createElement('li');
+                entry.innerHTML = `<strong>${name}</strong>: ${message}`;
+                guestList.appendChild(entry);
+
+                nameInput.value = '';
+                messageInput.value = '';
+            }
+        });
+
+    </script>
+</body>
+</html>
